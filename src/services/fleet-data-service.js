@@ -69,4 +69,22 @@ export class FleetDataService {
     return !hasErrors;
 
   }
+
+  getCarByLicense(license) {
+    return this.cars.find((car) => {
+      return car.license === license
+    });
+  }
+
+  getCarsSortedByLicense() {
+    return this.cars.sort((car1, car2) => {
+      if (car1.license < car2.license) {
+        -1
+      }
+      if (car1.license > car2.license) {
+        return 1
+      }
+      return 0;
+    })
+  }
 }

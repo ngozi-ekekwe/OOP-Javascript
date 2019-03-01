@@ -34,7 +34,7 @@ export let fleet = [
     latLong: '40.77756 - 73.58900'
   },
   {
-    license: 'AKC123',
+    license: 'FGH100',
     type: 'car',
     make: 'Telsa',
     model: 'Amazon 1250',
