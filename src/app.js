@@ -10,6 +10,8 @@ let d = new Drone();
 let dataService = new FleetDataService();
 dataService.loadData(fleet)
 
-console.log(dataService)
+// console.log(dataService)
 console.log(dataService.cars)
 console.log(dataService.drones)
+
+// console.log(c, d)
