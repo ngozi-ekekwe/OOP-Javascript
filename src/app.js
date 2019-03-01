@@ -1,8 +1,7 @@
-// type of drone class is a function
-class Drone {
+import Car from './classes/car.js';
+import Drone  from './classes/drone.js';
 
-}
+let c = new Car();
+let d = new Drone();
 
-let drone = new Drone();
-
-console.log(typeof drone)
+console.log(c, d)
