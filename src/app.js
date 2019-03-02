@@ -3,17 +3,10 @@ import Drone   from './classes/drone.js';
 
 import { FleetDataService } from './services/fleet-data-service.js';
 import { fleet } from './fleet-data.js'
+import { Button } from './ui/button.js';
 
-let dataService = new FleetDataService();
-dataService.loadData(fleet);
+let b = new Button('Click me');
 
-let car = dataService.getCarByLicense('AKC123')
-let cars = dataService.getCarsSortedByLicense();
+// console.log(b)
 
-// console.log(cars)
-
-for (let car of cars) {
-  console.log(car.license)
-}
-
-// console.log(car)
+b.appendToElement($('body'))

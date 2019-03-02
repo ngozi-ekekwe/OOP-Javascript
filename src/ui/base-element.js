@@ -1,5 +1,3 @@
-import $ from 'jquery';
-
 export class BaseElement {
 
   constructor() {
@@ -13,7 +11,7 @@ export class BaseElement {
 
   appendToElement(el) {
     this.createElement();
-    el.appendToElement(this.element);
+    el.append(this.element);
   }
 
   getElementString() {
